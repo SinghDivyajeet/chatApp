@@ -3,7 +3,7 @@ var socket = require("socket.io");
 
 var app = express();
 
-var port = 4000 || process.env.PORT;
+var port = process.env.PORT || 4000;
 
 
 
