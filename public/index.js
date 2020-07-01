@@ -25,3 +25,12 @@ socket.on("chat",function(data){
     chatWindow.innerHTML += `<div class="chatMessage"><p><strong>${data.name}</strong></p><p>${data.message}</p></div>`;
     message.value="";
 })
+
+//firing JS based on mobile screen size.
+window.onload=function(){
+    w = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+    var targetWidth = 768;
+    if ( w <= targetWidth) {     
+      document.body.requestFullscreen();
+    }
+    };
