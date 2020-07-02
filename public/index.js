@@ -1,7 +1,7 @@
 var socket = io.connect("http://127.0.0.1:4000/");
 
 //Taking user's name.
-var name = prompt("what's your name?")
+// var name = prompt("what's your name?")
 
 //function to fetch elements by ID
 var getEl = function(id){

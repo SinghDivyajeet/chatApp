@@ -10,7 +10,7 @@ var port = process.env.PORT || 4000;
 app.use(express.static("public"))
 
 app.get("/",function(req,res){
-    res.render("index.html")
+    res.render("home.html")
 })
 
 var server = app.listen(port,function(){
